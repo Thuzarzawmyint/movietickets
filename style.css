@@ -1,0 +1,846 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #003366;
+}
+
+nav {
+  background-color: #003366;
+  overflow: hidden;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 16px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+/*--------------------------------------------Header-Content---Header-Content---Header-Content---Header-Content---Header-Content-----------------------------------------------------------------------------*/
+.row {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.column {
+  width: 60%;
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.column1 {
+  width: 40%;
+  animation-name: slideInRight;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.column h1 {
+  margin: 100px 0 0 110px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+}
+
+.column p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px 100px 30px 100px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+.column1 p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px 100px 30px 100px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 200px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.btn1 {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 80px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn1:hover,
+.submit:hover,
+.submit1:hover {
+  background: lightblue;
+  border: 2px solid lightblue;
+  color: #262424;
+  transform: translateY(-8px);
+}
+
+.column1 img {
+  border-radius: 5px;
+  margin: 100px 0 0 0;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+hr {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+/*----------------------------------------------------------Book-Tickets---Book-Tickets---Book-Tickets---Book-Tickets---Book-Tickets--------------------------------------*/
+.h1 {
+  margin-top: 50px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.h3 {
+  text-align: center;
+  color: white;
+}
+
+.Row {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.Column {
+  width: 60%;
+  margin-right: 50px;
+}
+
+.Column1 {
+  width: 40%;
+  margin-left: 20px;
+}
+
+.Column h1 {
+  margin: 100px 0 0 110px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+}
+
+.Column p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px 100px 30px 100px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+.Column1 p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px 100px 30px 100px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+
+t {
+  width: 350px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid white;
+  padding-left: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  margin-left: 18px;
+}
+
+input {
+  width: 330px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid white;
+  padding-left: 20px;
+  color: white;
+  font-size: 18px;
+  margin-left: 18px;
+}
+input:focus {
+  outline: selec 2px solid white;
+}
+input::placeholder {
+  color: white;
+  font-size: 18px;
+}
+option {
+  color: black;
+  font-size: 18px;
+}
+option:focus {
+  outline: 2px solid white;
+}
+
+.submit {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0px;
+  width: 180px;
+  height: 50px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 90px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.submit6 {
+  cursor: pointer;
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 90px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.submit5 {
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 90px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+/*-------------------------------------------------------FeedBack---FeedBack---FeedBack---FeedBack---FeedBack----------------------------------------------------------------------------*/
+.row3 {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.column11 {
+  width: 40%;
+  margin-left: 180px;
+
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.column12 {
+  width: 60%;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.column12 h1 {
+  margin: 80px 0 0 60px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+}
+
+.column12 p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 20px 60px 30px 60px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+.column11 p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px 100px 30px 100px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+
+.submit1 {
+  cursor: pointer;
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 87px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+/*-------------------------------------------------About-Us---About-Us---About-Us---About-Us---About-Us------------------------------------------------------*/
+.h1 {
+  margin-top: 50px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.about {
+  width: 90%;
+  height: auto;
+  margin: 20px 0 0 100px;
+}
+
+.about h3 {
+  margin: 20px 0 0 50px;
+  font-family: Oswald;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.about p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 0 150px 30px 60px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+
+.hr1 {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 80px;
+}
+
+/*-----------------------------------------------------------------------Contact---Contact---Contact-------------------------------------------------------------*/
+.row-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact h2 {
+  margin-top: 50px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.col-1 h3,
+.col-2 h3,
+.col-3 h3 {
+  margin: 0 0 30px 50px;
+  font-family: monospace;
+  font-size: 25px;
+  color: white;
+}
+
+.col-1 p,
+.col-2 p,
+.col-3 p {
+  color: #a9a9a9;
+  text-align: left;
+  letter-spacing: 1px;
+  margin: 10px 0 0 60px;
+  font-size: 20px;
+}
+
+a {
+  color: lightcoral;
+  font-size: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #003366;
+}
+
+nav {
+  background-color: #003366;
+  overflow: hidden;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 16px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+/*--------------------------------------------Header-Content---Header-Content---Header-Content---Header-Content---Header-Content-----------------------------------------------------------------------------*/
+.row {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.column {
+  width: 60%;
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.column1 {
+  width: 40%;
+  animation-name: slideInRight;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+.column h1 {
+  margin: 100px 0 0 110px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+}
+
+.column p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px 100px 30px 100px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+.column1 p {
+  color: #a9a9a9;
+  font-size: 18px;
+  padding: 20px;
+  margin: 40px 100px 30px 100px;
+  letter-spacing: 1px;
+  font-family: Open Sans;
+  line-height: 35px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 200px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.btn1 {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 80px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn1:hover,
+.submit:hover,
+.submit1:hover {
+  background: lightblue;
+  border: 2px solid lightblue;
+  color: #262424;
+  transform: translateY(-8px);
+}
+
+.column1 img {
+  border-radius: 50%;
+  margin: 100px 0 0 0;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+hr {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+/*------------------------------------------------Add-Movies--Add-Movies---Add-Movies---Add-Movies---Add-Movies-----------------------------------*/
+.Row {
+  display: flex; /* Use flexbox to align children */
+  justify-content: space-between; /* Space out the columns */
+  align-items: flex-start; /* Align items to the start */
+  grid-template-rows: repeat(2, 1fr); /* add some margin for spacing */
+}
+
+.Column {
+  margin-top: 50px;
+  margin-right: 90px;
+  width: 45%; /* set width to prevent overflow in smaller screens */
+  flex: 1; /* Allow columns to take equal widths */
+  /* Add some margin between columns */ /* add some margin to separate columns */
+}
+
+.Column1 {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 45%;
+  flex: 1; /* Allow columns to take equal widths */
+}
+
+.submit:hover {
+  background: lightblue;
+  border: 2px solid lightblue;
+  color: #262424;
+  transform: translateY(-8px);
+}
+
+hr {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+select {
+  width: 350px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid white;
+  padding-left: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+input {
+  width: 330px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid white;
+  padding-left: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: 2px solid white;
+}
+input::placeholder {
+  color: white;
+  font-size: 18px;
+}
+option {
+  color: black;
+  font-size: 18px;
+}
+option:focus {
+  outline: 2px solid white;
+}
+
+.submit {
+  cursor: pointer;
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.submit1 {
+  cursor: pointer;
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.submit2 {
+  cursor: pointer;
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+/*-----------------------------------------------------------------Table---Table---Table---Table---Table------------------------------------------*/
+.h1 {
+  margin-top: 50px;
+  font-family: Oswald;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.h2 {
+  margin-top: 50px;
+  font-family: Oswald;
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+.success-message-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.success-message-box h3 {
+  color: white;
+}
+
+.success-message-box button {
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 20px;
+  margin: 20px 0 0 100px;
+  background: #fdda0d;
+  border: 2px solid #fdda0d;
+  color: black;
+  transition: 0.4s;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+.success-message-box button:hover {
+  background-color: lightblue;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+}
+
+.footer-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-column h3 {
+  text-align: center;
+  margin-top: 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+}
+
+.footer-column p,
+.footer-column ul {
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+
